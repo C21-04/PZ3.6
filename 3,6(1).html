@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML сторінка з кнопкою та JavaScript</title>
+    <style>
+        /* Стилізація для переміщення кнопки на середину сторінки */
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh; /* Займає 100% висоти вікна браузера */
+            margin: 0;
+        }
+
+        /* Стилізація для кнопки */
+        #myButton {
+            padding: 15px 20px; /* Збільшення внутрішнього відступу для більшого розміру кнопки */
+            font-size: 18px; /* Зміна розміру тексту кнопки */
+            border-radius: 8px; /* Закруглені кути */
+            background-color: #4CAF50; /* Зелений колір фону кнопки */
+            color: white; /* Білий колір тексту кнопки */
+            cursor: pointer; /* Змінює вигляд курсора при наведенні на кнопку */
+            border: none; /* Видалення рамки кнопки */
+            font-family:cursive /* Зміна шрифту тексту кнопки */
+        }
+    </style>
+</head>
+<body>
+
+    <button id="myButton">Click Me</button>
+
+    <script>
+        // Отримуємо кнопку за її id
+        var myButton = document.getElementById("myButton");
+
+        // Додаємо обробник події для кліку на кнопку
+        myButton.addEventListener("click", function() {
+            // Виводимо повідомлення при кліку
+            alert("Кнопка була натиснута!");
+        });
+    </script>
+
+</body>
+</html>
