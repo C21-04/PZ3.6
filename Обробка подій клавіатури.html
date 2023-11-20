@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Обробник клавіш</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            text-align: center;
+        }
+
+        #textInput {
+            padding: 10px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Введіть текст:</h1>
+
+    <input type="text" id="textInput" placeholder="Введіть текст">
+
+    <script>
+        // Отримуємо посилання на текстове поле за його ідентифікатором
+        var textField = document.getElementById('textInput');
+
+        // Додаємо обробник події для кожного натискання клавіші
+        textField.addEventListener('keydown', function (event) {
+            // Виводимо повідомлення "Клавіша була натиснута!"
+            alert('Клавіша була натиснута!');
+        });
+    </script>
+
+</body>
+</html>
